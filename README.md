@@ -21,7 +21,13 @@ git clone https://github.com/Broklam/codex-advisor-skill.git
 cd codex-advisor-skill
 ```
 
-Check that `~/.agents/skills/advisor` does not already exist.
+Check your configured skill locations for an existing `advisor` skill.
+For example, check `~/.agents/skills/advisor` and `~/.codex/skills/advisor`.
+If a copy exists, back it up before you update it.
+Replace its `SKILL.md` and `agents/openai.yaml` with the files from `advisor/`.
+Use one location for the skill.
+
+For a new installation, check that `~/.agents/skills/advisor` does not already exist.
 Run the commands for your system below.
 
 On macOS or Linux, run:
@@ -61,7 +67,8 @@ Use $advisor with gpt-6-astra at high effort at milestones and difficult blocker
 ```
 
 If you omit an effort, the skill uses the effort from a matching advisor assignment.
-Otherwise, it uses the tool's default for the selected model.
+Otherwise, it uses `high`.
+If `high` is unavailable, the skill asks you to choose a supported effort.
 If you do not specify a model, the skill uses an existing advisor assignment or inherits the main agent's model.
 
 ## How it works
