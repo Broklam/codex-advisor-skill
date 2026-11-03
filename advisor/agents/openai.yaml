@@ -1,0 +1,4 @@
+interface:
+  display_name: "Advisor"
+  short_description: "Consult a model on decisions and milestones"
+  default_prompt: "Use $advisor to consult gpt-6.1-terra at xhigh effort on the current decision."
