@@ -5,6 +5,12 @@ The main agent evaluates the advice and owns the final decision.
 
 Use the skill for one decision, a milestone, or advice throughout a task.
 
+## Example
+
+This example shows an advisor consultation in progress.
+
+![Codex starts a GPT-6 Astra advisor to review changes.](assets/advisor-consultation.png)
+
 ## Requirements
 
 - Codex with a subagent tool.
